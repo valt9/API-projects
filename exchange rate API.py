@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime, timedelta
 
 
-API_KEY = "f44ff8d296b85c97a40aeeff"
+API_KEY = ""
 EXCHANGE_RATE_URL = "https://v6.exchangerate-api.com/v6/" 
 DB_NAME = "exchange_rates.db"
 
@@ -50,4 +50,5 @@ else:
         print(f"Grabbed from API: 1 {base} = {rate} {target} (at {ts})")
     else:
         print("Error fetching data from API:", response.status_code)
+
 conn.close()
