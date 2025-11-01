@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 #Key and URL so the code can use it 
-API_KEY = "ba28423188bf4881b32b2c5c27d662b6"  
+API_KEY = ""  
 NEWS_URL = "https://newsapi.org/v2/everything"
 
 #the function sets up the parameters for the API
