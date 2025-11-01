@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-API_KEY = "fe7c51be8ac1418aa19140414251609"
+API_KEY = ""
 WEATHER_URL = " http://api.weatherapi.com/v1/current.json"
 
 def get_weather(city):
@@ -55,4 +55,5 @@ city = input("Enter city name: ")
 data = get_weather(city)
 entry = parse_weather(data, city)
 if entry:
+
     log_weather(entry)
